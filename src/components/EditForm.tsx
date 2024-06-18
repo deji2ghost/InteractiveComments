@@ -10,9 +10,9 @@
 
 import { useState } from "react"
 
-export const EditForm = ({submitEdit, reply}) => {
+export const EditForm = ({submitEdit, reply}: any) => {
     const [ subText, setSubText ] = useState(reply.content)
-    const handleSubmitEdit = (e) => {
+    const handleSubmitEdit = (e: any) => {
         e.preventDefault()
         submitEdit(reply, subText)
     }

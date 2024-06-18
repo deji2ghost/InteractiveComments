@@ -7,6 +7,7 @@ import { ReplySubForm } from './ReplySubForm'
 export const Comments = ({ userComment, userObj, handleDelete, handleEdit, handleComment, handleSubComment, setUserComment, handleMainEdit, submitEdit, submitMainEdit, subDelete}: any) => {
     const [ replyModal, setReplyModal] = useState('')
     const [ currentComment, setCurrentComment ] = useState({})
+    console.log(currentComment)
 
     const plusClicked = (scores:any) => {
         const newScore = scores.score + 1

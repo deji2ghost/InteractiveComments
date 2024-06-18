@@ -8,7 +8,7 @@ function App() {
 
   const [ userObj, setUserObj ] = useState({}) 
   const [ userComment, setUserComment ] = useState<any>([]) 
-  const [ showModal, setShowModal ] = useState(false)
+  // const [ showModal, setShowModal ] = useState(false)
   const [ replyText, setReplyText ] = useState('')
   const [ subText, setSubText ] = useState()
   const [ mainText, setMainText ] = useState()
@@ -204,7 +204,7 @@ function App() {
   }
 
   const getDate = (date: any) => {
-    const calcDaysPassed = (date1, date2) =>
+    const calcDaysPassed = (date1: any, date2: any) =>
     Math.round(Math.abs(date2 - date1) / (1000 * 60 * 60 * 24));
     const daysPassed = calcDaysPassed(new Date(), date)
     const numberpassed = daysPassed === 0 ? "Today" : daysPassed === 1 ? "Yesterday" : `${daysPassed} days ago`
@@ -218,7 +218,7 @@ function App() {
     <div className='bg-veryLightGray text-[16px] px-3 py-6 md:px-6 md:py-20 h-full'>
       <Comments userComment={userComment} userObj={userObj} handleDelete={handleDelete} handleEdit={handleEdit} handleComment={handleComment} replyText={replyText} setReplyText={setReplyText} handleSubComment={handleSubComment} setUserComment={setUserComment} handleMainEdit={handleMainEdit} subText={subText} setSubText={setSubText} submitEdit={submitEdit} submitMainEdit={submitMainEdit} mainText={mainText} setMainText={setMainText} subDelete={subDelete}/>
       <CommentBox userObj={userObj} addComment={addComment}/>
-      <div className={`${showModal ? 'visible' : 'hidden'} bg-grayishBlue bg-opacity-30 absolute top-0 left-0 w-full h-screen`}>
+      {/* <div className={`${showModal ? 'visible' : 'hidden'} bg-grayishBlue bg-opacity-30 absolute top-0 left-0 w-full h-screen`}>
         <div className='bg-White absolute left-0 right-0 w-[40%] mx-auto top-1/2 -translate-y-1/2 p-6 text-darkBlue rounded-md'>
           <h1 className='mb-5 font-bold'>DELETE COMMENT</h1>
           <p className='mb-4'>Are you sure you want to delete this comment? This will remove the comment and can't be undone</p>
@@ -227,7 +227,7 @@ function App() {
             <button className='text-White bg-softRed w-[45%] py-2 rounded-md font-medium'>Yes, Delete</button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

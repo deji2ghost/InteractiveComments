@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 
-export const ReplySubForm = ({userObj, handleSubComment, reply, replyModal, setReplyModal}) => {
+export const ReplySubForm = ({userObj, handleSubComment, reply, replyModal, setReplyModal}: any) => {
     const [ replyText, setReplyText ] = useState('')
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault()
         handleSubComment(replyText, reply)
         // console.log('clicked', replyText, currentComment)

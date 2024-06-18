@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-export const EditmainForm = ({comment, submitMainEdit}) => {
+export const EditmainForm = ({comment, submitMainEdit}: any) => {
 
     const [ mainText, setMainText ] = useState(comment.content)
-    const handleSubmitEdit = (e) => {
+    const handleSubmitEdit = (e: any) => {
         e.preventDefault()
         submitMainEdit(comment, mainText)
     }
