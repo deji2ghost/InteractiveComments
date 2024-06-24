@@ -104,9 +104,24 @@
       "isEditing": false
     },
     {
-      "id": 3193,
+      "id": "3193",
       "content": "bead",
       "createdAt": "2024-06-18T15:19:51.646Z",
+      "replies": [],
+      "user": {
+        "image": {
+          "png": "./images/avatars/image-juliusomo.png",
+          "webp": "./images/avatars/image-juliusomo.webp"
+        },
+        "username": "juliusomo"
+      },
+      "score": 0,
+      "isEditing": false
+    },
+    {
+      "id": 11708,
+      "content": "bad",
+      "createdAt": "2024-06-24T09:32:49.234Z",
       "replies": [],
       "user": {
         "image": {
